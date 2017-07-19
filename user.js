@@ -6,13 +6,13 @@ console.log("User.js is Loaded");
   var input = document.createElement('input');
   var button = document.createElement('button');
 
-button.addEventListener('click', () => {
+generate.addEventListener('click', () => {
 
 display.innerText = `http://google.com/${input.value}/customer`;
 
 });
 
 parent.appendChild(input);
-parent.appendChild(button);
+// parent.appendChild(button);
 parent.appendChild(display);
 })();
