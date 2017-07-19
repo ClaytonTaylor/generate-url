@@ -8,7 +8,7 @@ console.log("User.js is Loaded");
 
 generate.addEventListener('click', () => {
 
-display.innerText = `http://google.com/${input.value}/customer`;
+display.innerText = `https://www.myimarketslive.com/${input.value}/customer.html`;
 
 });
 
