@@ -10,10 +10,21 @@
       <input class="input" type="text" placeholder="Username">
       <input class="btn" type="submit" value="Go">
     </form>
+    <a class="link"></a>
     <script>
     (function() {
       var form = document.querySelector('.form');
       var input = document.querySelector('.input');
+      var link = document.querySelector('.link');
+
+      input.addEventListener('input', () => {
+        if (input.value) {
+          link.textContent = `http://google.com/${input.value}/customer`;
+          link.href = `http://google.com/${input.value}/customer`;
+        } else {
+          link.textContent = '';
+        }
+      });
 
       form.addEventListener('submit', function(e) {
         e.preventDefault();
