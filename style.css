@@ -1,15 +1,37 @@
-#generate {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
+body {
+  margin: 0;
+  max-height: 100vh;
+  min-height: 100vh;
+  max-width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-input {
-  
+.form {
+  display: flex;
+}
+
+.input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #DDD;
+  outline: none;
+}
+
+.btn {
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0;
+  border: 1px solid #DDD;
+  border-left: 0;
+  background: #13CE66;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background: #0F9F4F;
 }

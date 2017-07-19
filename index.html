@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Url Linker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form class="form">
+      <input class="input" type="text" placeholder="Username">
+      <input class="btn" type="submit" value="Go">
+    </form>
+    <script>
+    (function() {
+      var form = document.querySelector('.form');
+      var input = document.querySelector('.input');
 
-<link rel="stylesheet" href="style.css"/>
-</head>
-
-<body>
-<div>
-</div>
-
-<div>
-  <button id="generate">Generate URL</button>
-</div>
-
-
-<script type="text/javascript" src="user.js"></script>
-</body>
-
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        window.location = `http://google.com/${input.value}/customer`;
+      });
+    })();
+    </script>
+  </body>
 </html>
